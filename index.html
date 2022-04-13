@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
@@ -7,8 +7,104 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header title">Меню</h1>
-    </header>
-    
+        <nav class="main-nav main-nav--open main-nav--nojs">
+            <h2 class="main-nav__title">Меню</h2>
+            <ul class="main-nav__list  main-nav__list--language">
+                <li class="main-nav__item main-nav__item--language main-nav__item--close main-nav__item--triangle">
+                    <span class="main-nav__span--language">ru</span>
+                    <button class="main-nav__button main-nav__button--triangle">
+                        <span class="visually-hidden">Togle triangle</span>
+                    </button>
+                    <ul class="main-nav__list main-nav__list--drop-language">
+                        <li class="main-nav__item main-nav__item--lang-color" tabindex="0">ru</li>
+                        <li class="main-nav__item main-nav__item--lang-color">en</li>
+                    </ul>
+                </li>
+            </ul>                        
+            <div class="main-nav__div main-nav__div--search">
+                <label class="visually-hidden" for="site-search">Search the site:</label>
+                <input class="main-nav__input--search" type="search" placeholder="Поиск...">
+                <svg class="main-nav__svg--search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                    <path d="M11.4167 16.0833C13.994 16.0833 16.0833 13.994 16.0833 11.4167C16.0833 8.83934 13.994 6.75 11.4167 6.75C8.83934 6.75 6.75 8.83934 6.75 11.4167C6.75 13.994 8.83934 16.0833 11.4167 16.0833Z" stroke="#181A31" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.2499 17.2499L14.7124 14.7124" stroke="#181A31" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>                    
+            </div>
+            <div class="main-nav__div--wrapper">
+                <ul class="main-nav__list main-nav__list--info">
+                    <li class="main-nav__item main-nav__item--info"><a class="main-nav__link" href="#">Новости и блок</a></li>
+                    <li class="main-nav__item main-nav__item--info"><a class="main-nav__link" href="#">Оплата и доставка</a></li>
+                    <li class="main-nav__item main-nav__item--info"><a class="main-nav__link" href="#">Контакты</a></li>
+                    <li class="main-nav__item main-nav__item--info"><a class="main-nav__link"  href="#">Вакансии</a></li>
+                </ul>
+                <ul class="main-nav__list main-nav__list--catalog">
+                    <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="#">Каталог</a></li>
+                    <li class="main-nav__item main-nav__item--catalog main-nav__item--hotel main-nav__item--close main-nav__item--triangle">
+                        <div class="main-nav__div--wrapper-hotel">                            
+                            <a class="main-nav__link" href="#">Майнинг отель</a>
+                            <button class="main-nav__button main-nav__button--triangle">
+                                <span class="visually-hidden">Togle triangle</span>
+                            </button>  
+                        </div>         
+                        <ul class="main-nav__list main-nav__list--drop-down">
+                            <li class="main-nav__item main-nav__item--drop-down"><a class="main-nav__link" href="#">Калининская АЭС</a></li>
+                            <li class="main-nav__item main-nav__item--drop-down"><a class="main-nav__link" href="#">ПАО “Тулачермет”</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="#">Лизинг</a></li>
+                    <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link" href="#">О компании</a></li>
+                </ul>
+            </div>
+            <ul class="main-nav__list main-nav__list--contacts">
+                <li class="main-nav__item"><span class="main-nav__span main-nav__span--number" href="#">+7 (499) 877-41-45</span></li>
+                <li class="main-nav__item main-nav__item--social">
+                    <a class="main-nav__link" href="#">
+                        <span class="visually-hidden">Telegram</span>
+                        <svg class="main-nav__svg--telegram" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_2_357)">
+                            <path d="M13.7042 18.8272L13.3513 23.7907C13.8562 23.7907 14.0749 23.5738 14.3371 23.3134L16.7042 21.0512L21.6091 24.6432C22.5086 25.1445 23.1424 24.8805 23.3851 23.8156L26.6046 8.72938L26.6055 8.72849C26.8909 7.39871 26.1246 6.87871 25.2482 7.20493L6.32375 14.4503C5.0322 14.9516 5.05175 15.6716 6.1042 15.9978L10.9424 17.5027L22.1806 10.4707C22.7095 10.1205 23.1904 10.3143 22.7949 10.6645L13.7042 18.8272Z" fill="#181A31"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_357">
+                            <rect width="21.3333" height="21.3333" fill="white" transform="translate(5.33337 5.33334)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                          
+                    </a>
+                    <a class="main-nav__link" href="#">
+                        <span class="visually-hidden">WhatsApp</span>
+                        <svg class="main-nav__svg--whatsapp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0_2_354)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0759 8.89609C21.2048 7.0228 18.7164 5.99069 16.0654 5.98959C10.6028 5.98959 6.15698 10.4353 6.15479 15.8994C6.15405 17.6461 6.61035 19.3512 7.47766 20.8541L6.07166 25.9896L11.3254 24.6114C12.7731 25.4011 14.4028 25.8172 16.0614 25.8177H16.0656C21.5276 25.8177 25.9739 21.3717 25.976 15.9073C25.977 13.2591 24.9471 10.7693 23.0759 8.89609ZM16.0654 24.144H16.062C14.584 24.1434 13.1344 23.7462 11.8695 22.9958L11.5688 22.8172L8.45117 23.6351L9.28332 20.5954L9.0874 20.2838C8.26282 18.9723 7.82739 17.4564 7.82812 15.9C7.82983 11.3584 11.5251 7.66342 16.0687 7.66342C18.2689 7.66415 20.3372 8.52206 21.8923 10.0791C23.4475 11.6361 24.3035 13.7057 24.3027 15.9067C24.3008 20.4487 20.6057 24.144 16.0654 24.144ZM20.5837 17.9747C20.3362 17.8507 19.1187 17.2518 18.8916 17.169C18.6648 17.0864 18.4995 17.0453 18.3346 17.2931C18.1694 17.5409 17.6949 18.0987 17.5504 18.2639C17.4059 18.4292 17.2616 18.4499 17.0139 18.3259C16.7662 18.202 15.9684 17.9404 15.0225 17.0968C14.2864 16.4402 13.7894 15.6292 13.6449 15.3814C13.5006 15.1334 13.6437 15.0123 13.7535 14.8761C14.0216 14.5432 14.29 14.1942 14.3726 14.029C14.4552 13.8637 14.4138 13.7191 14.3518 13.5952C14.29 13.4713 13.7948 12.2524 13.5885 11.7564C13.3873 11.2738 13.1833 11.339 13.0312 11.3314C12.887 11.3242 12.7218 11.3227 12.5566 11.3227C12.3916 11.3227 12.1233 11.3846 11.8962 11.6327C11.6693 11.8806 11.0297 12.4796 11.0297 13.6985C11.0297 14.9173 11.917 16.0948 12.0408 16.2601C12.1645 16.4254 13.787 18.9266 16.271 19.9991C16.8618 20.2545 17.323 20.4067 17.6827 20.5208C18.276 20.7093 18.8157 20.6827 19.2424 20.619C19.7183 20.5478 20.7074 20.0199 20.9139 19.4415C21.1202 18.863 21.1202 18.3673 21.0582 18.2639C20.9965 18.1606 20.8313 18.0987 20.5837 17.9747Z" fill="#181A31"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_354">
+                            <rect width="21.3333" height="21.3333" fill="white" transform="translate(5.33337 5.33334)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__link--call" href="#">Заказать звонок</a></li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--basket">
+                <li class="main-nav__item main-nav__item--basket">
+                    <a href="#" class="main-nav__link main-nav__link--basket">                        
+                        <span class="main-nav__span main-nav__span--basket">Корзина</span>
+                        <svg class="main-nav__svg main-nav__svg--basket" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 1.5C5.05573 1.5 4.16656 1.94458 3.6 2.7L2.85 3.7C2.46053 4.21929 2.25 4.85089 2.25 5.5V15C2.25 15.3978 2.40804 15.7794 2.68934 16.0607C2.97064 16.342 3.35218 16.5 3.75 16.5H14.25C14.6478 16.5 15.0294 16.342 15.3107 16.0607C15.592 15.7794 15.75 15.3978 15.75 15V5.5C15.75 4.85089 15.5395 4.21929 15.15 3.7L14.4 2.7C13.8334 1.94458 12.9443 1.5 12 1.5H6Z" fill="#008EF8"/>
+                            <path d="M2.25 4.5H15.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 7.5C12 8.29565 11.6839 9.05871 11.1213 9.62132C10.5587 10.1839 9.79565 10.5 9 10.5C8.20435 10.5 7.44129 10.1839 6.87868 9.62132C6.31607 9.05871 6 8.29565 6 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="main-nav__item main-nav__item--toggle">
+                    <button class="main-nav__button main-nav__button--toggle"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+<script src="js/script.js"></script> 
 </body>
 </html>
